@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Caga2Dos Atlas: centro de inteligencia paranormal para aventureros, investigadores y amantes del misterio.">
+  <meta name="theme-color" content="#080a0d">
+  <title>Caga2Dos Atlas · Genesis</title>
+  <link rel="stylesheet" href="./assets/css/app.css">
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Caga2Dos Atlas, inicio">
+      <img src="./assets/brand/logo-caga2dos.png" alt="Caga2Dos">
+      <span><b>ATLAS</b><small>Centro de Inteligencia Paranormal</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <button class="nav-btn active" data-view="inicio">Inicio</button>
+      <button class="nav-btn" data-view="atlas">Explorar</button>
+      <button class="nav-btn" data-view="expedientes">Investigar</button>
+      <button class="nav-btn" data-view="archivo">Aprender</button>
+      <button class="nav-btn" data-view="lab">Herramientas</button>
+    </nav>
+    <button class="profile" aria-label="Abrir cuaderno del aventurero"><span>DM</span><b>Aventurero</b></button>
+  </header>
+
+  <main id="main">
+    <section class="view active" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">CAGA2DOS ATLAS · v0.1 GENESIS</p>
+          <h1 id="hero-title">Documentando el misterio.<br><span>Conservando la memoria.</span></h1>
+          <p class="hero-text">Un espacio para aventureros que quieren explorar lugares, contrastar historias, preparar investigaciones y conectar cada hallazgo con sus fuentes.</p>
+          <div class="hero-actions">
+            <button class="primary" data-jump="atlas">Explorar el Atlas</button>
+            <button class="secondary" data-jump="expedientes">Abrir expedientes</button>
+          </div>
+          <div class="trust-row">
+            <span>Historia documentada</span><span>Rumorología separada</span><span>Fuentes visibles</span>
+          </div>
+        </div>
+        <aside class="signal-panel" aria-label="Actividad del Atlas">
+          <div class="signal-head"><span class="live-dot"></span> ATLAS EN ACTIVIDAD</div>
+          <div class="radar" aria-hidden="true"><i></i><i></i><i></i><i></i><b></b></div>
+          <div class="signal-card">
+            <small>Descubrimiento destacado</small>
+            <strong>Belchite Viejo</strong>
+            <span>Zaragoza · Pueblo histórico</span>
+          </div>
+        </aside>
+      </div>
+
+      <section class="search-shell" aria-label="Buscador global">
+        <div class="search-icon">⌕</div>
+        <input id="global-search" type="search" placeholder="Busca un lugar, leyenda, equipo, programa o evidencia…" autocomplete="off">
+        <kbd>Ctrl K</kbd>
+        <div id="search-results" class="search-results" hidden></div>
+      </section>
+
+      <section class="quick-grid" aria-label="Áreas principales">
+        <button class="module-card atlas-card" data-jump="atlas"><span>01</span><div><b>Atlas del Misterio</b><small>Explora lugares y abre fichas vivas</small></div><i>→</i></button>
+        <button class="module-card" data-jump="expedientes"><span>02</span><div><b>Expedientes</b><small>Historia, cronología y evidencias</small></div><i>→</i></button>
+        <button class="module-card" data-jump="archivo"><span>03</span><div><b>Archivo audiovisual</b><small>Programas, temporadas y casos</small></div><i>→</i></button>
+        <button class="module-card" data-jump="lab"><span>04</span><div><b>Laboratorio</b><small>Herramientas para investigar mejor</small></div><i>→</i></button>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="panel span-2">
+          <div class="panel-head"><div><p>ÚLTIMA INVESTIGACIÓN</p><h2>La torre y el guardián</h2></div><button class="ghost">Ver en YouTube ↗</button></div>
+          <div class="featured-case">
+            <img src="./assets/reportaje/investigacion-03.jpg" alt="Investigación nocturna de Caga2Dos">
+            <div class="case-overlay"><span>CASO CAGA2DOS</span><h3>Respuestas inteligentes y una figura en Kinect</h3><p>Accede al expediente, al vídeo y a las evidencias asociadas desde una única ficha.</p><button class="primary small" data-jump="expedientes">Abrir caso</button></div>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-head"><div><p>ESTADO DEL ATLAS</p><h2>Base viva</h2></div><span class="status">OPERATIVO</span></div>
+          <ul class="metric-list"><li><b>6</b><span>Lugares documentados</span></li><li><b>21</b><span>Temporadas archivadas</span></li><li><b>12</b><span>Fuentes verificadas</span></li><li><b>4</b><span>Herramientas activas</span></li></ul>
+        </article>
+        <article class="panel">
+          <div class="panel-head"><div><p>PARA AVENTUREROS</p><h2>Continúa tu ruta</h2></div></div>
+          <div class="route-list"><button data-jump="atlas"><b>Explorar lugares</b><span>Mapa y filtros →</span></button><button data-jump="lab"><b>Preparar una salida</b><span>Checklist y riesgos →</span></button><button data-jump="archivo"><b>Investigar un caso</b><span>Archivo audiovisual →</span></button></div>
+        </article>
+      </section>
+    </section>
+
+    <section class="view" id="atlas" aria-labelledby="atlas-title">
+      <header class="section-head"><div><p class="eyebrow">EXPLORAR</p><h1 id="atlas-title">Atlas del Misterio</h1><p>Un mapa documental. Las ubicaciones sensibles se muestran de forma aproximada.</p></div><button class="primary" id="open-random">Sorpréndeme</button></header>
+      <div class="atlas-layout">
+        <aside class="filters">
+          <label>Buscar lugar<input id="place-search" type="search" placeholder="Ej. Belchite"></label>
+          <label>Tipo<select id="type-filter"><option value="all">Todos</option><option>Pueblo histórico</option><option>Castillo</option><option>Sanatorio</option><option>Enclave natural</option></select></label>
+          <div class="filter-chips"><button class="chip active" data-filter="all">Todos</button><button class="chip" data-filter="investigado">Caga2Dos</button><button class="chip" data-filter="publico">Acceso público</button></div>
+          <div id="place-list" class="place-list"></div>
+        </aside>
+        <div class="map-stage" aria-label="Mapa conceptual de España con ubicaciones">
+          <svg viewBox="0 0 760 560" role="img" aria-label="Mapa esquemático de España">
+            <path class="country" d="M108 169l73-70 110-20 89 24 76-9 79 47 61 11 47 65-12 92-62 50-76 13-49 80-100 24-95-36-85 7-65-70-21-93z"/>
+            <path class="country island" d="M620 442l34-18 39 10 8 26-27 18-43-8z"/>
+          </svg>
+          <div id="map-pins"></div>
+          <div class="map-legend"><span><i class="pin-dot red"></i>Investigado</span><span><i class="pin-dot"></i>Documentado</span></div>
+        </div>
+        <aside id="place-detail" class="detail-panel" aria-live="polite"></aside>
+      </div>
+    </section>
+
+    <section class="view" id="expedientes" aria-labelledby="exp-title">
+      <header class="section-head"><div><p class="eyebrow">INVESTIGAR</p><h1 id="exp-title">Expedientes vivos</h1><p>Cada caso conecta historia, testimonios, rumorología, vídeos y fuentes.</p></div></header>
+      <div class="case-grid" id="case-grid"></div>
+    </section>
+
+    <section class="view" id="archivo" aria-labelledby="archive-title">
+      <header class="section-head"><div><p class="eyebrow">APRENDER</p><h1 id="archive-title">Archivo audiovisual</h1><p>Una biblioteca conectada por temporadas, episodios, lugares y temáticas.</p></div></header>
+      <div class="archive-layout">
+        <aside class="season-list" id="season-list"></aside>
+        <article class="season-content"><div class="season-hero"><p>TEMPORADA ABIERTA</p><h2 id="season-title">Temporada 7</h2><span id="season-meta">Una selección de capítulos para explorar el funcionamiento.</span></div><div id="episode-list" class="episode-list"></div></article>
+      </div>
+    </section>
+
+    <section class="view" id="lab" aria-labelledby="lab-title">
+      <header class="section-head"><div><p class="eyebrow">HERRAMIENTAS</p><h1 id="lab-title">Laboratorio del aventurero</h1><p>Utilidades prácticas antes, durante y después de una investigación.</p></div></header>
+      <div class="lab-grid">
+        <article class="tool-card"><span>01</span><h2>Checklist de salida</h2><p>Prepara cámaras, baterías, sensores, permisos y seguridad.</p><button class="secondary tool-open" data-tool="checklist">Abrir herramienta</button></article>
+        <article class="tool-card"><span>02</span><h2>Evaluación de riesgos</h2><p>Registra accesos, estructuras, animales, cobertura y evacuación.</p><button class="secondary tool-open" data-tool="risk">Abrir herramienta</button></article>
+        <article class="tool-card"><span>03</span><h2>Diario de campo</h2><p>Crea una cronología rápida con horas, sucesos y marcadores.</p><button class="secondary tool-open" data-tool="diary">Abrir herramienta</button></article>
+        <article class="tool-card"><span>04</span><h2>Registro de evidencias</h2><p>Relaciona cada hallazgo con dispositivo, tiempo y confianza.</p><button class="secondary tool-open" data-tool="evidence">Abrir herramienta</button></article>
+      </div>
+      <section id="workspace" class="workspace"><div><p class="eyebrow">ÁREA DE TRABAJO</p><h2>Selecciona una herramienta</h2><p>El módulo se abrirá aquí sin añadir una página interminable.</p></div></section>
+    </section>
+  </main>
+
+  <footer><span>Caga2Dos Atlas · Genesis</span><p>En Atlas no existen usuarios. Existen aventureros.</p><button data-view-footer="inicio">Volver al inicio ↑</button></footer>
+  <script src="./assets/js/app.js" defer></script>
+</body>
+</html>
