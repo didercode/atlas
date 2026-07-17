@@ -1,0 +1,13 @@
+{
+  "name": "Caga2Dos Atlas",
+  "short_name": "CG2 Atlas",
+  "description": "Archivo paranormal, centro de operaciones e investigaciones Caga2Dos",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#050708",
+  "theme_color": "#050708",
+  "lang": "es",
+  "icons": [
+    {"src":"assets/images/logo-caga2dos.png","sizes":"any","type":"image/png","purpose":"any maskable"}
+  ]
+}

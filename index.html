@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="Caga2Dos Atlas: expedientes paranormales, investigación de campo y archivo oficial de Caga2Dos en una sola plataforma.">
+  <meta name="theme-color" content="#050708">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Caga2Dos Atlas · Archivo paranormal e investigación de campo">
+  <meta property="og:description" content="Descubre casos, prepara investigaciones, registra sucesos y conecta cada expediente con el contenido de Caga2Dos.">
+  <meta property="og:image" content="assets/images/investigacion-03.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Caga2Dos Atlas · Archivo paranormal e investigación de campo</title>
+  <link rel="icon" href="assets/images/logo-caga2dos.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/css/app-v3.css">
+</head>
+<body>
+  <a class="skip" href="#content">Saltar al contenido</a>
+  <header class="topbar">
+    <button class="menu-button" id="menu-button" aria-label="Abrir menú" aria-controls="sidebar" aria-expanded="false">☰</button>
+    <a class="brand" href="#inicio" data-route="inicio" aria-label="Caga2Dos Atlas, inicio">
+      <img src="assets/images/logo-caga2dos.png" alt=""><span>CAGA<b>2</b>DOS <small>ATLAS</small></span>
+    </a>
+    <p class="top-status"><i></i><span>Centro operativo</span></p>
+    <div class="top-actions">
+      <button id="search-open" class="icon-button" aria-label="Abrir búsqueda">⌕</button>
+      <button id="theme-toggle" class="icon-button" aria-label="Cambiar tema">☀</button>
+      <button class="field-launch" data-route="investigar" data-field-launch><span>●</span> Modo de campo</button>
+    </div>
+  </header>
+
+  <aside class="sidebar" id="sidebar" aria-label="Navegación principal">
+    <nav>
+      <button class="nav-item active" data-route="inicio"><i>01</i><span>Inicio<small>Panel general</small></span></button>
+      <button class="nav-item" data-route="expedientes"><i>02</i><span>Expedientes<small>Archivo nacional</small></span></button>
+      <button class="nav-item" data-route="investigar"><i>03</i><span>Archivo de Campo<small>Herramientas y registro</small></span></button>
+      <button class="nav-item" data-route="caga2dos"><i>04</i><span>Caga2Dos<small>Archivo oficial</small></span></button>
+    </nav>
+    <div class="sidebar-project" id="sidebar-project">
+      <span>PROYECTO ACTIVO</span>
+      <b>Ninguna sesión activa</b>
+      <small>Crea un proyecto para comenzar.</small>
+    </div>
+    <div class="sidebar-foot"><span class="live-dot"></span><p>Archivo operativo<small id="update-label">Actualizando datos…</small></p></div>
+  </aside>
+
+  <main id="content">
+    <section class="view active" id="inicio">
+      <div class="hero hero-v3">
+        <img src="assets/images/investigacion-03.jpg" alt="Investigación nocturna de Caga2Dos">
+        <div class="hero-shade"></div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="signal-dot"></span> CENTRO DE INVESTIGACIÓN PARANORMAL</p>
+          <h1>Descubre el caso.<br><span>Investígalo.</span></h1>
+          <p>El archivo paranormal de España y una herramienta de campo real: prepara sesiones, registra cada suceso y conserva la memoria de tus investigaciones.</p>
+          <form class="hero-search" id="hero-search"><label class="sr-only" for="home-search">Buscar en el Atlas</label><input id="home-search" type="search" placeholder="Busca un lugar, provincia o fenómeno…"><button>Buscar expediente</button></form>
+          <div class="hero-actions"><button class="primary" data-route="expedientes">Explorar casos</button><button class="secondary field-cta" data-route="investigar">Preparar investigación</button></div>
+        </div>
+        <aside class="hero-console">
+          <p>ESTADO DEL SISTEMA</p>
+          <div><span>Archivo nacional</span><b>EN LÍNEA</b></div>
+          <div><span>Modo de campo</span><b>DISPONIBLE</b></div>
+          <div><span>Guardado privado</span><b>LOCAL</b></div>
+          <div><span>Conexión Caga2Dos</span><b>ACTIVA</b></div>
+        </aside>
+      </div>
+      <div class="stats" id="home-stats"></div>
+      <section class="mission-grid">
+        <article class="mission-card archive"><span>01</span><div><p class="eyebrow">ARCHIVO NACIONAL</p><h2>Más de mil historias para explorar</h2><p>Historia, leyenda, fuentes y clasificación editorial en expedientes conectados.</p><button class="text-button" data-route="expedientes">Abrir expedientes →</button></div></article>
+        <article class="mission-card operations"><span>02</span><div><p class="eyebrow">ARCHIVO DE CAMPO</p><h2>Tu cuaderno para cada salida</h2><p>Checklist, riesgos, diario, registro en vivo y revisión de cada observación.</p><button class="text-button" data-route="investigar">Abrir Archivo de Campo →</button></div></article>
+        <article class="mission-card channel"><span>03</span><div><p class="eyebrow">ARCHIVO OFICIAL</p><h2>Todo Caga2Dos conectado</h2><p>Investigaciones, vídeos, shorts, directos, tecnología y archivo visual.</p><button class="text-button" data-route="caga2dos">Ver Caga2Dos →</button></div></article>
+      </section>
+      <section class="content-section"><div class="section-heading"><div><p class="eyebrow">SELECCIÓN EDITORIAL</p><h2>Escenarios para tu próxima investigación</h2></div><button data-route="expedientes" class="text-button">Ver todos →</button></div><div class="card-grid visual-cards" id="latest-grid"></div></section>
+      <section class="split-feature operations-feature"><div><p class="eyebrow">DEL ARCHIVO AL TERRENO</p><h2>Un expediente que continúa creciendo</h2><p>Convierte cualquier caso en un proyecto, prepara el equipo y registra golpes, voces, Kinect, REM-Pod, Spirit Box o incidencias con hora exacta.</p><button class="primary" data-route="investigar">Crear primer proyecto</button></div><img src="assets/images/investigacion-01.jpg" alt="Equipo Caga2Dos durante una investigación"></section>
+    </section>
+
+    <section class="view" id="expedientes">
+      <header class="page-header archive-header"><div><p class="eyebrow">BASE DE CONOCIMIENTO</p><h1>Expedientes</h1><p>Encuentra un caso, estudia sus fuentes y conviértelo directamente en un proyecto de investigación.</p></div><button class="primary" id="case-create-project">+ Preparar investigación</button></header>
+      <div class="explore-shortcuts" id="explore-shortcuts">
+        <button data-scenario=""><b>Todos</b><small>Archivo completo</small></button>
+        <button data-scenario="castle"><b>Castillos</b><small>Patrimonio y ruinas</small></button>
+        <button data-scenario="hospital"><b>Sanatorios</b><small>Hospitales y preventorios</small></button>
+        <button data-scenario="nature"><b>Naturaleza</b><small>Bosques y montañas</small></button>
+        <button data-scenario="house"><b>Abandonados</b><small>Casas y complejos</small></button>
+        <button data-scenario="water"><b>Cuevas y agua</b><small>Lagos, pozos e islas</small></button>
+      </div>
+      <div class="filterbar advanced"><label class="filter-search"><span>Buscar</span><input id="case-search" type="search" placeholder="Nombre, lugar, fenómeno o etiqueta"></label><label><span>Comunidad</span><select id="community-filter"><option value="">Todas</option></select></label><label><span>Provincia</span><select id="province-filter"><option value="">Todas</option></select></label><label><span>Tipo de escenario</span><select id="type-filter"><option value="">Todos</option><option value="castle">Castillos y patrimonio</option><option value="hospital">Hospitales y sanatorios</option><option value="nature">Bosques y montaña</option><option value="cemetery">Cementerios</option><option value="water">Cuevas y agua</option><option value="house">Casas y abandonados</option></select></label><label><span>Estado</span><select id="status-filter"><option value="">Todos</option><option value="investigated">Investigado por Caga2Dos</option><option value="sourced">Con fuente enlazada</option><option value="pending">Pendiente de fuente</option><option value="favorite">Mis favoritos</option></select></label><label><span>Ordenar</span><select id="sort-filter"><option value="interest">Mayor interés</option><option value="documentation">Mejor documentados</option><option value="name">Nombre A–Z</option><option value="community">Comunidad</option></select></label></div>
+      <div class="active-filters" id="active-filters"></div>
+      <div class="results-head"><p id="case-count">Cargando expedientes…</p><div class="result-actions"><button class="text-button" id="random-case">Expediente aleatorio</button><button class="text-button" id="clear-filters">Limpiar filtros</button><button class="view-toggle active" data-layout="grid" aria-label="Vista visual">▦</button><button class="view-toggle" data-layout="list" aria-label="Vista archivo">☷</button></div></div>
+      <div class="case-grid" id="case-grid"></div><button class="load-more" id="load-more">Mostrar más expedientes</button>
+    </section>
+
+    <section class="view" id="investigar">
+      <header class="operations-header field-archive-header">
+        <div><p class="eyebrow"><span class="signal-dot"></span> HERRAMIENTAS PARA AVENTUREROS</p><h1>Archivo de Campo</h1><p>Preparación y documentación sobre el terreno. Todo queda organizado dentro del cuaderno de cada investigación.</p></div>
+        <div class="privacy-seal"><span>▣</span><div><b>DATOS PRIVADOS</b><small>Guardados solamente en este dispositivo</small></div></div>
+      </header>
+      <section class="field-tool-grid" id="field-tool-grid">
+        <article class="field-tool checklist-tool"><header><div><span>01</span><h2>Checklist tecnológico</h2></div><b id="field-check-count">0/12</b></header><div id="field-check-preview" class="field-check-preview"></div><button class="text-button" data-open-workspace="preparacion">Revisar todo el equipo →</button></article>
+        <article class="field-tool risk-tool"><header><div><span>02</span><h2>Evaluación de riesgos</h2></div><b id="field-risk-value">SIN EVALUAR</b></header><div id="field-risks" class="field-risks"></div></article>
+        <article class="field-tool diary-tool"><header><div><span>03</span><h2>Diario de campo</h2></div><b>LOCAL</b></header><textarea id="field-diary" rows="7" placeholder="22:15 · Entrada al lugar…"></textarea><div class="field-tool-actions"><button class="primary" id="save-field-diary">Guardar diario</button><small id="field-diary-status"></small></div></article>
+        <article class="field-tool quick-tool"><header><div><span>04</span><h2>Registro rápido</h2></div><b>PROTOCOLO</b></header><div class="quick-form"><label>Tipo<select id="quick-log-type"></select></label><label>Marca temporal<input id="quick-log-time" type="time" step="1"></label><label class="quick-note">Observación<textarea id="quick-log-note" rows="3" placeholder="Describe lo observado sin interpretarlo…"></textarea></label></div><button class="primary" id="quick-log-add">Registrar observación</button></article>
+      </section>
+      <div class="field-project-banner" id="field-project-banner"><div><span>CUADERNO ACTIVO</span><b>Ninguna investigación seleccionada</b><small>Crea o abre un proyecto para utilizar las herramientas.</small></div><button class="primary" id="field-banner-new">+ Crear cuaderno</button></div>
+      <nav class="workspace-tabs" aria-label="Herramientas de investigación">
+        <button class="active" data-workspace="proyectos"><span>01</span>Cuadernos</button>
+        <button data-workspace="preparacion"><span>02</span>Preparación</button>
+        <button data-workspace="campo"><span>03</span>Sesión en vivo</button>
+        <button data-workspace="revision"><span>04</span>Registros</button>
+        <button data-workspace="informe"><span>05</span>Informe</button>
+      </nav>
+
+      <section class="workspace-panel active" id="workspace-proyectos">
+        <div class="ops-stats" id="ops-stats"></div>
+        <div class="section-heading"><div><p class="eyebrow">CUADERNOS GUARDADOS</p><h2>Mis investigaciones</h2></div><div class="project-toolbar"><button class="secondary" id="backup-projects">Copia de seguridad</button><button class="secondary" id="import-project">Importar</button><input id="import-project-file" type="file" accept="application/json" hidden><button class="primary" id="new-project">+ Nueva investigación</button></div></div>
+        <div class="project-grid" id="project-grid"></div>
+        <div class="empty-projects" id="empty-projects"><div class="radar-icon"><i></i></div><h2>Tu primer cuaderno está esperando</h2><p>Crea una investigación desde cero o abre cualquier expediente y pulsa “Preparar investigación”.</p><button class="primary" id="empty-new-project">Crear primera investigación</button></div>
+      </section>
+
+      <section class="workspace-panel" id="workspace-preparacion">
+        <div id="prep-empty" class="workspace-empty"><b>02</b><h2>Selecciona un proyecto</h2><p>Abre o crea una investigación para preparar equipo, participantes y seguridad.</p></div>
+        <div id="prep-content" hidden>
+          <div class="workspace-title"><div><p class="eyebrow">PREPARACIÓN DE MISIÓN</p><h2 id="prep-title"></h2></div><span class="mission-code" id="prep-code"></span></div>
+          <div class="prep-grid">
+            <article><header><span>01</span><h3>Revisión técnica</h3></header><div id="prep-checklist" class="checklist"></div></article>
+            <article><header><span>02</span><h3>Tecnología</h3></header><div id="prep-tech" class="tag-selector"></div></article>
+            <article><header><span>03</span><h3>Datos de campo</h3></header><label>Participantes<input id="prep-team" placeholder="David, Toni, Víctor…"></label><label>Zonas previstas<input id="prep-zones" placeholder="Planta baja, pasillo, sótano…"></label><label>Objetivo<textarea id="prep-objective" rows="4" placeholder="Qué queremos comprobar…"></textarea></label><button class="primary" id="save-prep">Guardar preparación</button><small id="prep-saved"></small></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="workspace-panel" id="workspace-campo">
+        <div id="field-empty" class="workspace-empty"><b>03</b><h2>No hay una sesión preparada</h2><p>Selecciona un proyecto para abrir el panel de registro.</p></div>
+        <div id="field-content" hidden>
+          <header class="field-header"><div><p class="eyebrow">SESIÓN DE CAMPO</p><h2 id="field-title"></h2><p id="field-location"></p></div><div class="session-clock"><span id="session-state">PREPARADA</span><b id="session-clock">00:00:00</b><div class="session-actions"><button class="primary" id="session-toggle">Comenzar sesión</button><button class="secondary" id="finish-session">Cerrar investigación</button></div></div></header>
+          <div class="field-layout">
+            <section class="event-console"><div class="console-heading"><div><p class="eyebrow">REGISTRO RÁPIDO</p><h3>¿Qué acaba de ocurrir?</h3></div><small>Un toque guarda la hora exacta</small></div><div class="event-pad" id="event-pad"></div><button class="secondary full-button" id="detailed-event">+ Registro detallado</button></section>
+            <section class="live-timeline"><div class="console-heading"><div><p class="eyebrow">CRONOLOGÍA EN VIVO</p><h3>Últimos sucesos</h3></div><span class="event-counter" id="event-counter">0 registros</span></div><div id="live-events" class="event-list"></div></section>
+          </div>
+        </div>
+      </section>
+
+      <section class="workspace-panel" id="workspace-revision">
+        <div id="review-empty" class="workspace-empty"><b>04</b><h2>Nada que revisar todavía</h2><p>Los sucesos registrados durante el trabajo de campo aparecerán aquí.</p></div>
+        <div id="review-content" hidden><div class="workspace-title"><div><p class="eyebrow">MESA DE ANÁLISIS</p><h2 id="review-title"></h2></div><div class="review-summary" id="review-summary"></div></div><div class="review-list" id="review-list"></div></div>
+      </section>
+
+      <section class="workspace-panel" id="workspace-informe">
+        <div id="report-empty" class="workspace-empty"><b>05</b><h2>Informe pendiente</h2><p>Selecciona un proyecto para generar su resumen documental.</p></div>
+        <div id="report-content" hidden><div class="workspace-title"><div><p class="eyebrow">INFORME DE INVESTIGACIÓN</p><h2 id="report-title"></h2></div><div class="report-actions"><button class="secondary" id="export-json">Exportar datos</button><button class="primary" id="print-report">Imprimir / PDF</button></div></div><article class="report-sheet" id="report-sheet"></article></div>
+      </section>
+    </section>
+
+    <section class="view" id="caga2dos">
+      <div class="cg-hero cg-hero-v3"><img src="assets/images/investigacion-06.jpg" alt="Archivo de investigaciones Caga2Dos"><div class="cg-overlay"></div><div class="cg-copy"><img src="assets/images/logo-caga2dos.png" alt="Caga2Dos"><p class="eyebrow">ARCHIVO OFICIAL DE INVESTIGACIÓN</p><h1>CAGA2DOS</h1><p>Investigación paranormal, historia y aventura. Cada vídeo conectado con su lugar, su tecnología y su expediente.</p><div><a class="primary link-button" href="https://www.youtube.com/@Caga2Dos" target="_blank" rel="noopener">Ver canal en YouTube ↗</a><button class="secondary" id="cg-explore">Explorar investigaciones</button></div></div></div>
+      <div class="social-dashboard"><a href="https://www.youtube.com/@Caga2Dos/videos" target="_blank" rel="noopener"><img src="assets/images/investigacion-03.jpg" alt="Vídeos Caga2Dos"><span>VÍDEOS COMPLETOS</span><b>YouTube</b></a><a href="https://www.youtube.com/@Caga2Dos/shorts" target="_blank" rel="noopener"><img src="assets/images/investigacion-01.jpg" alt="Shorts Caga2Dos"><span>MOMENTOS DESTACADOS</span><b>Shorts</b></a><a href="https://www.youtube.com/@Caga2Dos/streams" target="_blank" rel="noopener"><img src="assets/images/investigacion-09.jpg" alt="Directos Caga2Dos"><span>SESIONES EN VIVO</span><b>Directos</b></a></div>
+      <div class="cg-layout">
+        <aside class="cg-nav"><button class="active" data-cg-tab="investigaciones">Investigaciones</button><button data-cg-tab="temporadas">Temporadas</button><button data-cg-tab="tecnologia">Tecnología</button><button data-cg-tab="equipo">Equipo</button><button data-cg-tab="evidencias">Evidencias</button><button data-cg-tab="archivo-visual">Archivo visual</button></aside>
+        <div class="cg-content">
+          <div class="cg-stats" id="cg-stats"></div>
+          <section class="cg-panel active" id="cg-investigaciones"><div class="section-heading"><div><p class="eyebrow">EXPEDIENTES DE CAMPO</p><h2>Investigaciones catalogadas</h2></div></div><div class="featured-investigation" id="featured-investigation"></div><div class="investigation-grid" id="investigation-grid"></div></section>
+          <section class="cg-panel" id="cg-temporadas"><h2>Temporadas</h2><p>La memoria cronológica de las investigaciones y publicaciones de Caga2Dos.</p><div class="timeline-years"><article><b>2023</b><span>Inicio del archivo</span></article><article><b>2024</b><span>Expansión de investigaciones</span></article><article><b>2025</b><span>Nuevos lugares y formatos</span></article><article><b>2026</b><span>Nace Caga2Dos Atlas</span></article></div></section>
+          <section class="cg-panel" id="cg-tecnologia"><h2>Tecnología de campo</h2><div class="technology-grid" id="technology-grid"></div></section>
+          <section class="cg-panel" id="cg-equipo"><h2>La familia Caga2Dos</h2><p>Perfiles, funciones y participación en cada investigación.</p><div class="empty-state">Zona preparada para incorporar retratos y funciones reales del equipo.</div></section>
+          <section class="cg-panel" id="cg-evidencias"><h2>Archivo de anomalías</h2><p>Registros publicados con contexto, dispositivo, momento exacto y explicaciones alternativas.</p><div class="principles"><article><b>01</b><h3>Registro original</h3><p>Audio o vídeo asociado a su sesión.</p></article><article><b>02</b><h3>Contexto completo</h3><p>Hora, dispositivo y condiciones.</p></article><article><b>03</b><h3>Revisión prudente</h3><p>Separar observación e interpretación.</p></article></div></section>
+          <section class="cg-panel" id="cg-archivo-visual"><h2>Archivo visual</h2><div class="visual-grid"><img src="assets/images/investigacion-01.jpg" alt="Investigación Caga2Dos 1"><img src="assets/images/investigacion-03.jpg" alt="Investigación Caga2Dos 2"><img src="assets/images/investigacion-06.jpg" alt="Investigación Caga2Dos 3"><img src="assets/images/investigacion-09.jpg" alt="Investigación Caga2Dos 4"></div></section>
+        </div>
+      </div>
+      <div class="social-strip"><div><h2>Sigue el expediente</h2><p>Nuevos vídeos, avances y publicaciones de Caga2Dos.</p></div><div><a href="https://www.youtube.com/@Caga2Dos" target="_blank" rel="noopener">YouTube</a><a href="https://www.instagram.com/caga2dos_/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@caga2dos" target="_blank" rel="noopener">TikTok</a><a href="https://www.facebook.com/Caga2Dos/" target="_blank" rel="noopener">Facebook</a></div></div>
+    </section>
+  </main>
+
+  <nav class="mobile-nav" aria-label="Navegación móvil"><button class="active" data-route="inicio"><span>⌂</span>Inicio</button><button data-route="expedientes"><span>▦</span>Expedientes</button><button data-route="investigar"><span>⌁</span>Campo</button><button data-route="caga2dos"><span>◉</span>Caga2Dos</button></nav>
+
+  <dialog id="case-dialog"><button class="dialog-close" aria-label="Cerrar">×</button><div id="dialog-content"></div></dialog>
+  <dialog id="investigation-dialog"><button class="dialog-close" aria-label="Cerrar">×</button><div id="investigation-content"></div></dialog>
+  <dialog id="project-dialog"><button class="dialog-close" aria-label="Cerrar">×</button><form id="project-form" class="dialog-body project-form"><p class="eyebrow">NUEVO PROYECTO</p><h1>Preparar investigación</h1><input type="hidden" id="project-case-id"><label>Expediente relacionado<select id="project-case"><option value="">Investigación independiente</option></select></label><div class="form-grid"><label>Nombre del proyecto<input id="project-name" required placeholder="Investigación Torre Salvana"></label><label>Fecha prevista<input id="project-date" type="date"></label></div><label>Lugar<input id="project-location" required placeholder="Municipio, provincia o ubicación"></label><label>Participantes<input id="project-team" placeholder="Nombres separados por comas"></label><fieldset><legend>Tecnología prevista</legend><div class="tag-selector" id="project-tech"></div></fieldset><label>Objetivo inicial<textarea id="project-objective" rows="4" placeholder="Qué queremos estudiar o comprobar…"></textarea></label><div class="dialog-form-actions"><button type="button" class="secondary" data-close-dialog>Cancelar</button><button class="primary">Crear proyecto</button></div></form></dialog>
+  <dialog id="event-dialog"><button class="dialog-close" aria-label="Cerrar">×</button><form id="event-form" class="dialog-body project-form"><p class="eyebrow">REGISTRO DE CAMPO</p><h1>Nuevo suceso</h1><input type="hidden" id="event-id"><div class="form-grid"><label>Tipo<select id="event-type"></select></label><label>Hora<input id="event-time" type="time" step="1"></label></div><label>Zona<input id="event-zone" placeholder="Pasillo, planta superior, exterior…"></label><label>Descripción<textarea id="event-description" rows="4" placeholder="Describe únicamente lo observado…"></textarea></label><div class="form-grid"><label>Dispositivo<input id="event-device" placeholder="Kinect, grabadora 2…"></label><label>Testigos<input id="event-witnesses" placeholder="Quién estaba presente"></label></div><label>Clasificación<select id="event-status"><option value="pending">Pendiente de revisar</option><option value="explained">Explicado</option><option value="environmental">Probablemente ambiental</option><option value="technical">Incidencia técnica</option><option value="inconclusive">No concluyente</option><option value="anomaly">Anomalía sin identificar</option><option value="published">Seleccionado para publicar</option></select></label><div class="dialog-form-actions"><button type="button" class="secondary" data-close-dialog>Cancelar</button><button class="primary">Guardar registro</button></div></form></dialog>
+  <div class="search-overlay" id="search-overlay" hidden><div class="search-box"><button id="search-close" aria-label="Cerrar búsqueda">×</button><label for="global-search">Buscar en todo el Atlas</label><input id="global-search" type="search" placeholder="Lugar, provincia, fenómeno…" autocomplete="off"><div id="global-results"></div></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <footer><div><b>CAGA2DOS ATLAS</b><span>Archivo paranormal e investigación de campo</span></div><div><a href="https://www.youtube.com/@Caga2Dos" target="_blank" rel="noopener">YouTube</a><a href="https://www.instagram.com/caga2dos_/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@caga2dos" target="_blank" rel="noopener">TikTok</a></div><p>Historia documentada no significa fenómeno paranormal demostrado. Respeta propiedades, permisos y seguridad.</p></footer>
+  <script src="data/data-bundle.js" defer></script>
+  <script src="assets/js/app-v3.js" defer></script>
+</body>
+</html>
